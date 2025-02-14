@@ -21,12 +21,11 @@
     <button onclick="startCountdown()">Imádom a Rafit</button>
     <div id="countdown">Hátralévő idő: --:--</div>
 
-    <script>
+   <script>
         function startCountdown() {
             const now = new Date();
             let targetDate = new Date();
-            targetDate.setDate(now.getDate() + 1);
-            targetDate.setHours(15, 0, 0, 0); 
+            targetDate.setHours(15, 0, 0, 0); // **Ma délután 3-ra módosítva**
 
             function updateCountdown() {
                 const currentTime = new Date();
